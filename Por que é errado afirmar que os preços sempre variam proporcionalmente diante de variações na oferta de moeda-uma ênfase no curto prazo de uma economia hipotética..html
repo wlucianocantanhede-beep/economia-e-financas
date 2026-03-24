@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Por que é errado afirmar que os preços sempre variam proporcionalmente diante de variações na oferta de moeda-uma ênfase no curto prazo de uma economia hipotética.</title>
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    svg {
+      height: auto;
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      white-space: pre-wrap;
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      border: none;
+      border-top: 1px solid #1a1a1a;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+<p>Por que é errado afirmar que os preços sempre variam
+proporcionalmente diante de variações na oferta de moeda: uma ênfase no
+curto prazo de uma economia hipotética.</p>
+<p>Na internet, muitas pessoas afirmam que os preços sempre variam
+proporcionalmente diante de variações na oferta de moeda, mantidas as
+demais variáveis constantes (dentre essas demais variáveis, para elas o
+produto real e a tecnologia são as principais). É verdade que grande
+parte desse grupo de pessoas afirma que tal proporcionalidade pode não
+ser verificada, por exemplo, em casos em que há variações no produto
+real de uma economia. Mas, segundo o consenso desse nicho, verifica-se
+sempre uma proporcionalidade entre moeda e preço, desde que as demais
+variáveis sejam constantes.</p>
+<p>Trazendo para o contexto brasileiro, é comum ver pessoas desse nicho
+expondo, por exemplo, que a taxa de crescimento acumulado do agregado
+monetário
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_1</annotation></semantics></math>
+(o
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_1</annotation></semantics></math>
+é composto pelo papel-moeda em poder do público e pelos depósitos à
+vista) é superior à taxa de crescimento acumulado do IPCA, que é o
+índice oficial de inflação do Brasil. Sendo o
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_1</annotation></semantics></math>
+a oferta de moeda da economia, e dadas taxas de crescimento modestas do
+PIB brasileiro, a “inflação real” tende a variar proporcionalmente às
+variações do
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_1</annotation></semantics></math>.
+Logo, elas chegam à conclusão de que o IPCA subestima a “inflação real”
+do Brasil.</p>
+<p>Outras pessoas vão além: afirmam que há um cenário de juros reais
+negativos no Brasil, em que o acumulado da “inflação real” supera o
+acumulado da taxa de juros (mais precisamente, a taxa de juros Selic
+Over). Como consequência disso, investimentos de renda fixa como, por
+exemplo, o Tesouro Selic, que remunera à taxa Selic Over mais ou menos
+uma taxa bem pequena prefixada (um deságio ou ágio), remuneram, em
+média, a uma taxa aquém da “inflação real”.</p>
+<p>Para várias dessas pessoas, a “inflação real” do Brasil é em torno de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">20\%</annotation></semantics></math>
+ao ano e, como quase todos os investimentos de renda fixa têm uma
+rentabilidade ao ano inferior a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">20\%</annotation></semantics></math>,
+esses investimentos sempre perdem para “inflação real”; ou seja, são
+investimentos de “perda fixa”. É claro que essa “inflação real” de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>20</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">20\%</annotation></semantics></math>
+ao ano não faz sentido.</p>
+<p>Atendo-se ao
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_1</annotation></semantics></math>,
+conforme dados do Bacen, disponíveis em
+<code>https://www.bcb.gov.br/estatisticas/panoramaosd</code>, pode-se
+ver que, de março de 2005 a outubro de 2025, o fator acumulado do
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_1</annotation></semantics></math>
+é, aproximadamente,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>17</mn></mrow><annotation encoding="application/x-tex">5{,}17</annotation></semantics></math>,
+indicando que no acumulado desse período o
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_1</annotation></semantics></math>
+cresceu, aproximadamente,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>417</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">417\%</annotation></semantics></math>.
+Por outro lado, nesse mesmo período, o fator acumulado do IPCA é,
+aproximadamente,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>016</mn></mrow><annotation encoding="application/x-tex">3{,}016</annotation></semantics></math>,
+indicando que no acumulado desse período o IPCA cresceu,
+aproximadamente,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>202</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">202\%</annotation></semantics></math>.
+Os dados referentes ao IPCA estão disponíveis no site do IBGE.</p>
+<p>Quanto à defesa dos juros reais negativos no Brasil, se considerarmos
+a evolução do
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_1</annotation></semantics></math>
+como a evolução fidedigna da oferta de moeda da economia brasileira e da
+“inflação real”, é fácil verificar, através de dados divulgados no site
+do Bacen, que, no período de março de 2005 a outubro de 2025, o fator
+acumulado da taxa Selic Over é, aproximadamente,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>,</mo><mn>85</mn></mrow><annotation encoding="application/x-tex">7{,}85</annotation></semantics></math>,
+indicando que, para cada
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+real remunerado à taxa Selic Over, obtiveram-se
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>,</mo><mn>85</mn></mrow><annotation encoding="application/x-tex">7{,}85</annotation></semantics></math>
+reais brutos no final do período, representando uma rentabilidade bruta
+acumulada de, aproximadamente,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>685</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">685\%</annotation></semantics></math>
+e uma rentabilidade bruta anual de, aproximadamente,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>,</mo><mn>15</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">10{,}15\%</annotation></semantics></math>.</p>
+<p>Seguindo esse pensamento, como o fator acumulado da taxa Selic Over é
+maior do que o fator acumulado do
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>M</mi><mn>1</mn></msub><annotation encoding="application/x-tex">M_1</annotation></semantics></math>,
+logo os investimentos de renda fixa que remuneraram, no mínimo, à taxa
+Selic Over, ganharam, em termos brutos, da “inflação real” no período
+considerado, a afirmação de que há juros reais negativos no Brasil é
+falsa (dada a grande diferença entre
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>,</mo><mn>85</mn></mrow><annotation encoding="application/x-tex">7{,}85</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>17</mn></mrow><annotation encoding="application/x-tex">5{,}17</annotation></semantics></math>,
+é de se pensar que o fator acumulado líquido da taxa Selic Over está
+entre
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>7</mn><mo>,</mo><mn>85</mn></mrow><annotation encoding="application/x-tex">7{,}85</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>,</mo><mn>17</mn></mrow><annotation encoding="application/x-tex">5{,}17</annotation></semantics></math>).</p>
+<p>Resta-nos refutar a afirmação de que os preços sempre variam
+proporcionalmente diante de variações na oferta de moeda, mantidas as
+demais variáveis constantes.</p>
+<p>Suponha, inicialmente, uma economia com
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>
+agentes: o primeiro, um produtor (responsável por contratar o
+trabalhador e pagar o valor correspondente de seu consumo ao terceiro
+agente); o segundo, um trabalhador/consumidor, que paga ao produtor para
+consumir parte do produto gerado; e o terceiro, um agente cuja função é
+ofertar moeda e receber o pagamento do produtor. Há um único produto
+comercializado, sendo o preço deste dado pelo mercado internacional, e
+informação perfeita.</p>
+<p>Nessa economia, o consumo do trabalhador se realiza primeiro e,
+depois, o consumo do produtor se realiza. O lucro é igual à oferta de
+moeda da economia, e, primeiro, a quantidade total de moeda da economia
+é ofertada integralmente ao produtor. No final do processo, o lucro é
+destinado integralmente ao terceiro agente.</p>
+<p>Define-se como curto prazo dessa economia um período de tempo
+necessário em que o terceiro agente, respondendo a uma variação no
+preço, oferta moeda na economia, entregando-a diretamente ao
+produtor.</p>
+<p>Em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>,
+por exemplo:</p>
+<p>O produto total real da economia em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>
+tem que ser maior do que o produto consumido pelo agente consumidor,
+isto é, produto total real = parte do produto real consumido pelo
+consumidor + parte do produto real consumido pelo produtor.</p>
+<p>Seja, em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>,
+um produto real de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math>
+unidades e preço
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">=5</annotation></semantics></math>.
+Logo, a preços de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>,
+o produto total é valorado a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>25</mn><annotation encoding="application/x-tex">25</annotation></semantics></math>
+unidades monetárias. Sabe-se que o produtor consumiu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>
+unidades do produto real, sobrando
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+unidades para o consumidor. Logo, a renda do consumidor precisa ser de
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>R</mi><mo>=</mo><mn>2</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>10</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">R = 2 \times 5 = 10.</annotation></semantics></math></p>
+<p>O salário real é
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mi>R</mi><mi>p</mi></mfrac><mo>=</mo><mn>2</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">\frac{R}{p} = 2,</annotation></semantics></math>
+exatamente
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+unidades de produto real.</p>
+<p><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>R</mi><annotation encoding="application/x-tex">R</annotation></semantics></math>
+é o custo do produtor para produzir
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math>
+unidades.
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>C</mi><mo>=</mo><mn>10</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">C = 10.</annotation></semantics></math></p>
+<p>Como lucro é igual à receita menos custos e a receita coincide com o
+valor do produto total,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>u</mi><mi>c</mi><mi>r</mi><mi>o</mi><mo>=</mo><mn>25</mn><mo>−</mo><mn>10</mn><mo>=</mo><mn>15</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">Lucro = 25 - 10 = 15.</annotation></semantics></math></p>
+<p>O lucro é a valoração do consumo de parte do produto real pelo
+produtor.
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>u</mi><mi>c</mi><mi>r</mi><mi>o</mi><mo>=</mo><mn>3</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>15</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">Lucro = 3 \times 5 = 15.</annotation></semantics></math></p>
+<p>Veja que
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>V</mi><mi>a</mi><mi>l</mi><mi>o</mi><mi>r</mi><mspace width="0.222em"></mspace><mi>d</mi><mi>o</mi><mspace width="0.222em"></mspace><mi>p</mi><mi>r</mi><mi>o</mi><mi>d</mi><mi>u</mi><mi>t</mi><mi>o</mi><mspace width="0.222em"></mspace><mi>t</mi><mi>o</mi><mi>t</mi><mi>a</mi><mi>l</mi><mo>=</mo><mi>L</mi><mi>u</mi><mi>c</mi><mi>r</mi><mi>o</mi><mo>+</mo><mi>R</mi></mrow><annotation encoding="application/x-tex">Valor\ do\ produto\ total = Lucro + R</annotation></semantics></math>
+e
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>L</mi><mi>u</mi><mi>c</mi><mi>r</mi><mi>o</mi><mo>=</mo><mi>R</mi><mi>e</mi><mi>c</mi><mi>e</mi><mi>i</mi><mi>t</mi><mi>a</mi><mo>−</mo><mi>C</mi><mi>u</mi><mi>s</mi><mi>t</mi><mi>o</mi><mi>s</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">Lucro = Receita - Custos.</annotation></semantics></math></p>
+<p>São identidades.</p>
+<p>E quanto à oferta de moeda em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>?</p>
+<p>Sabendo que o produtor tem que consumir
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>
+unidades de produto e o consumidor,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+unidades, a oferta de moeda, em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>,
+pode ser menor que o valor do produto total, dependendo, por exemplo, de
+quantas vezes a moeda troca de mãos. Se considerarmos que, em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mrow><mn>0</mn><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">t_{0-1}</annotation></semantics></math>,
+o produto total real foi igual a zero, o preço
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">=0</annotation></semantics></math>,
+a oferta de moeda
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>=</mo><annotation encoding="application/x-tex">=</annotation></semantics></math>
+demanda por moeda
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">=0</annotation></semantics></math>,
+isso significa que a demanda por moeda aumentou de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mrow><mn>0</mn><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">t_{0-1}</annotation></semantics></math>
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>.
+Por algum motivo, os agentes sabem que o produtor e o consumidor têm que
+consumir
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+unidades de produto, respectivamente, de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mrow><mn>0</mn><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">t_{0-1}</annotation></semantics></math>
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>.
+Há informação perfeita, período de tempo e expectativas quanto ao
+consumo. Havendo informação perfeita, as expectativas quanto ao consumo
+são autorrealizáveis com o transcorrer do tempo. No exemplo, por haver
+informação perfeita, a expectativa do consumo total de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>25</mn><annotation encoding="application/x-tex">25</annotation></semantics></math>
+unidades monetárias do produtor e do consumidor é autorrealizável. E,
+além disso, a oferta de moeda é endógena ao produto nominal total.</p>
+<p>Pode-se pensar em uma relação, de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mrow><mn>0</mn><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">t_{0-1}</annotation></semantics></math>
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>,
+em que, após produzidas as
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math>
+unidades de produto, o consumidor gasta
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math>
+unidades monetárias para a aquisição de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+unidades de produto, já que ele ganhou
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math>
+unidades monetárias para produzir
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math>
+unidades de produto. Portanto, sob a ótica da receita e despesa do
+produtor, essas
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>10</mn><annotation encoding="application/x-tex">10</annotation></semantics></math>
+unidades monetárias entram, ao mesmo tempo, na receita e no custo do
+produtor, anulando-se contabilmente os valores. Sobram
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>3</mn><annotation encoding="application/x-tex">3</annotation></semantics></math>
+unidades de produto valoradas a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>15</mn><annotation encoding="application/x-tex">15</annotation></semantics></math>
+unidades monetárias para o produtor, cujo valor é exatamente igual ao
+lucro do produtor.</p>
+<p>Nesse exemplo, em que o consumo do trabalhador se realiza primeiro e,
+depois, o consumo do produtor se realiza, o lucro é igual à oferta de
+moeda da economia, e, primeiro, a quantidade total de moeda da economia
+teria que ser ofertada integralmente ao produtor. No final do processo,
+o lucro seria destinado integralmente ao terceiro agente. Tal relação
+somente seria possível porque a variação da oferta de moeda foi definida
+a priori.</p>
+<p>Suponha que, de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_1</annotation></semantics></math>,
+o produto real duplique. O valor do produto é
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>10</mn><mo>×</mo><mn>5</mn><mo>=</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">10 \times 5 = 50</annotation></semantics></math>
+(preços constantes de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math>
+unidades monetárias). Suponha, ainda, que o produtor continue consumindo
+uma quantidade de produto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">1{,}5</annotation></semantics></math>
+vez maior do que o consumo do trabalhador.</p>
+<p>A oferta de moeda seria quanto? Nesse caso, sempre seria igual ao
+lucro, contanto que o lucro fosse maior ou igual à maior renda
+individual dos trabalhadores e considerando que o consumo dos
+trabalhadores seja em pontos diferentes de tempo, a fim de dar tempo de
+a renda (custo) entrar na receita. Se o produtor consumir
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>6</mn><annotation encoding="application/x-tex">6</annotation></semantics></math>
+unidades, seu lucro deve ser
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>30</mn><annotation encoding="application/x-tex">30</annotation></semantics></math>.
+O trabalhador consome
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math>
+unidades, com renda igual a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>20</mn><annotation encoding="application/x-tex">20</annotation></semantics></math>.</p>
+<p>A variação da oferta de moeda, de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_1</annotation></semantics></math>,
+foi de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>15</mn><annotation encoding="application/x-tex">15</annotation></semantics></math>
+unidades monetárias, uma taxa de crescimento de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">100\%</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mn>30</mn><mn>15</mn></mfrac><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>×</mo><mn>100</mn><mo>=</mo><mn>100</mn><mi>%</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">\left(\frac{30}{15}-1\right)\times 100 = 100\%,</annotation></semantics></math>
+ao passo que o produto real dobrou (taxa de crescimento de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">100\%</annotation></semantics></math>).</p>
+<p>Suponha que, de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_1</annotation></semantics></math>,
+o preço dobre. O valor do produto é
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>5</mn><mo>×</mo><mn>10</mn><mo>=</mo><mn>50</mn></mrow><annotation encoding="application/x-tex">5 \times 10 = 50</annotation></semantics></math>
+(produto real constante de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>5</mn><annotation encoding="application/x-tex">5</annotation></semantics></math>
+unidades). Suponha, ainda, que o número de trabalhadores aumente em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+unidade e que o produtor consuma uma quantidade de produto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math>
+vezes maior do que a média do consumo dos trabalhadores.</p>
+<p>A oferta de moeda seria quanto?</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>50</mn><mo>=</mo><mn>4</mn><mo>×</mo><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>+</mo><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mn>2</mn><mo>=</mo><mn>6</mn><mo>×</mo><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mi>.</mi></mrow><annotation encoding="application/x-tex">50 = 4 \times \bar{Z} + \bar{Z} \times 2 = 6 \times \bar{Z}.</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>=</mo><mn>8</mn><mo>,</mo><mn>33</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\bar{Z} = 8{,}33.</annotation></semantics></math></p>
+<p>Logo, como o produtor consome
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>3</mn><mo>,</mo><mn>3333</mn></mrow><annotation encoding="application/x-tex">3{,}3333</annotation></semantics></math>
+unidades, seu lucro deve ser
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>33</mn><mo>,</mo><mn>33</mn></mrow><annotation encoding="application/x-tex">33{,}33</annotation></semantics></math>.
+O valor do consumo do total dos trabalhadores é
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>16</mn><mo>,</mo><mn>66</mn></mrow><annotation encoding="application/x-tex">16{,}66</annotation></semantics></math>.</p>
+<p>A variação da oferta de moeda, de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_1</annotation></semantics></math>,
+foi de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>18</mn><mo>,</mo><mn>33</mn></mrow><annotation encoding="application/x-tex">18{,}33</annotation></semantics></math>
+unidades monetárias, uma taxa de crescimento de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>122</mn><mo>,</mo><mn>20</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">122{,}20\%</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mn>33</mn><mo>,</mo><mn>33</mn></mrow><mn>15</mn></mfrac><mo>−</mo><mn>1</mn><mo stretchy="true" form="postfix">)</mo></mrow><mo>×</mo><mn>100</mn><mo>=</mo><mn>122</mn><mo>,</mo><mn>20</mn><mi>%</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">\left(\frac{33{,}33}{15}-1\right)\times 100 = 122{,}20\%,</annotation></semantics></math>
+ao passo que o preço dobrou (taxa de crescimento de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>100</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">100\%</annotation></semantics></math>).</p>
+<p>Esses exemplos supramencionados mostram que os preços não variam
+sempre proporcionalmente em relação às variações da oferta de moeda. No
+segundo exemplo, para que o preço aumente menos do que proporcionalmente
+em relação ao aumento da oferta de moeda ou, conforme o contexto dessa
+economia, a oferta de moeda aumente mais do que proporcionalmente em
+relação ao aumento do preço, basta que o consumo do primeiro agente, o
+produtor, cresça a uma taxa maior do que a taxa de crescimento do número
+de trabalhadores.</p>
+<p>Ao generalizar a estrutura dessa economia para
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+trabalhadores, um produtor e o outro agente (o terceiro do começo), qual
+é a relação entre preço e oferta de moeda?</p>
+<p>Suponha que, de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_1</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>1</mn></msub><annotation encoding="application/x-tex">t_1</annotation></semantics></math>
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>2</mn></msub><annotation encoding="application/x-tex">t_2</annotation></semantics></math>,
+…,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mrow><mi>k</mi><mo>−</mo><mn>1</mn></mrow></msub><annotation encoding="application/x-tex">t_{k-1}</annotation></semantics></math>
+a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mi>k</mi></msub><annotation encoding="application/x-tex">t_k</annotation></semantics></math>,
+a oferta de moeda seja
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.
+Há
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+transações em pontos diferentes de tempo em cada período de tempo
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>t</mi><annotation encoding="application/x-tex">t</annotation></semantics></math>,
+em que envolvem somente compra do produto pelos trabalhadores e cada
+trabalhador faz somente uma transação, sendo os valores das transações
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Z</mi><mn>1</mn></msub><mo>,</mo><msub><mi>Z</mi><mn>2</mn></msub><mo>,</mo><mi>…</mi><mo>,</mo><msub><mi>Z</mi><mi>n</mi></msub></mrow><annotation encoding="application/x-tex">Z_1, Z_2, \ldots, Z_n</annotation></semantics></math>.
+Então, nesse exemplo, o produto nominal
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>=</mo><mi>M</mi><mo>+</mo><mo>∑</mo><mi>Z</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">= M + \sum Z.</annotation></semantics></math></p>
+<p>Ou,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mi>Y</mi><mo>=</mo><mi>M</mi><mo>+</mo><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">p \times Y = M + \bar{Z} \times n,</annotation></semantics></math>
+onde
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>=</mo><mfrac><mrow><mo>∑</mo><mi>Z</mi></mrow><mi>n</mi></mfrac><mo>=</mo><mi>v</mi><mi>a</mi><mi>l</mi><mi>o</mi><mi>r</mi><mi>m</mi><mi>é</mi><mi>d</mi><mi>i</mi><mi>o</mi><mi>d</mi><mi>a</mi><mi>s</mi><mi>t</mi><mi>r</mi><mi>a</mi><mi>n</mi><mi>s</mi><mi>a</mi><mi>ç</mi><mi>õ</mi><mi>e</mi><mi>s</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">\bar{Z} = \frac{\sum Z}{n} = valor médio das transações.</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mfrac><mrow><mi>M</mi><mo>+</mo><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi></mrow><mi>Y</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">p = \frac{M + \bar{Z} \times n}{Y}.</annotation></semantics></math></p>
+<p>Onde
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+também é igual ao número de trabalhadores da economia.</p>
+<p>Aqui, destaca-se a análise de curto prazo (somente variações na
+oferta de moeda em resposta às variações no preço).</p>
+<p>A derivada parcial de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+em relação a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+é:
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi>∂</mi><mi>p</mi></mrow><mrow><mi>∂</mi><mi>M</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mi>Y</mi></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{\partial p}{\partial M} = \frac{1}{Y}.</annotation></semantics></math></p>
+<p>Como
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>∂</mi><mi>p</mi></mrow><mrow><mi>∂</mi><mi>M</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>×</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>M</mi><mi>p</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>=</mo><mfrac><mn>1</mn><mi>Y</mi></mfrac><mo>×</mo><mfrac><mi>M</mi><mi>p</mi></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">\left(\frac{\partial p}{\partial M}\right)\times\left(\frac{M}{p}\right) = \frac{1}{Y}\times\frac{M}{p},</annotation></semantics></math>
+temos
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mrow><mi>p</mi><mo>,</mo><mi>M</mi></mrow></msub><mo>=</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mrow><mi>∂</mi><mi>p</mi></mrow><mrow><mi>∂</mi><mi>M</mi></mrow></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>×</mo><mrow><mo stretchy="true" form="prefix">(</mo><mfrac><mi>M</mi><mi>p</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">\varepsilon_{p,M} = \left(\frac{\partial p}{\partial M}\right)\times\left(\frac{M}{p}\right).</annotation></semantics></math></p>
+<p>onde
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ε</mi><mrow><mi>p</mi><mo>,</mo><mi>M</mi></mrow></msub><annotation encoding="application/x-tex">\varepsilon_{p,M}</annotation></semantics></math>
+é a elasticidade de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+em relação a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math></p>
+<p>Nessa economia, como o preço é dado, o mais certo é obter a
+elasticidade de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+em relação a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.
+Mas vamos pensar em elasticidade de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+em relação a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+que é o inverso da elasticidade de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+em relação a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mrow><mi>p</mi><mo>,</mo><mi>M</mi></mrow></msub><mo>=</mo><mfrac><mi>M</mi><mrow><mi>p</mi><mo>×</mo><mi>Y</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mi>p</mi><mo>×</mo><mi>Y</mi><mo>−</mo><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi></mrow><mrow><mi>p</mi><mo>×</mo><mi>Y</mi></mrow></mfrac><mo>=</mo><mn>1</mn><mo>−</mo><mfrac><mrow><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi></mrow><mrow><mi>p</mi><mo>×</mo><mi>Y</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\varepsilon_{p,M} = \frac{M}{p \times Y} = \frac{p \times Y - \bar{Z} \times n}{p \times Y} = 1 - \frac{\bar{Z} \times n}{p \times Y}.</annotation></semantics></math></p>
+<p>Como
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mi>Y</mi><mo>=</mo><mi>M</mi><mo>+</mo><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">p \times Y = M + \bar{Z} \times n,</annotation></semantics></math>
+para valores positivos de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mi>Y</mi></mrow><annotation encoding="application/x-tex">p \times Y</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi></mrow><annotation encoding="application/x-tex">\bar{Z} \times n</annotation></semantics></math>,
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mi>Y</mi><mo>&gt;</mo><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi><mi>.</mi></mrow><annotation encoding="application/x-tex">p \times Y &gt; \bar{Z} \times n.</annotation></semantics></math></p>
+<p>Então
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>&lt;</mo><msub><mi>ε</mi><mrow><mi>p</mi><mo>,</mo><mi>M</mi></mrow></msub><mo>&lt;</mo><mn>1</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">0 &lt; \varepsilon_{p,M} &lt; 1,</annotation></semantics></math>
+ou seja, mantidas as demais variáveis constantes,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+varia menos do que proporcionalmente em relação às variações de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.</p>
+<p>Veja que, se
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mi>m</mi><mo>×</mo><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>,</mo></mrow><annotation encoding="application/x-tex">M = m \times \bar{Z},</annotation></semantics></math>
+onde
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>≥</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">m \geq 1</annotation></semantics></math>,
+indicando que a oferta de moeda (lucro) tem que ser pelo menos igual ao
+valor médio das transações,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mi>Y</mi><mo>=</mo><mi>M</mi><mo>+</mo><mfrac><mi>M</mi><mi>m</mi></mfrac><mo>×</mo><mi>n</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">p \times Y = M + \frac{M}{m}\times n,</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mi>Y</mi><mo>=</mo><mi>M</mi><mo>×</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>n</mi><mi>m</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">p \times Y = M \times \left(1 + \frac{n}{m}\right).</annotation></semantics></math></p>
+<p>Como
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mrow><mi>p</mi><mo>,</mo><mi>M</mi></mrow></msub><mo>=</mo><mfrac><mi>M</mi><mrow><mi>p</mi><mo>×</mo><mi>Y</mi></mrow></mfrac><mo>,</mo></mrow><annotation encoding="application/x-tex">\varepsilon_{p,M} = \frac{M}{p \times Y},</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mrow><mi>p</mi><mo>,</mo><mi>M</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>n</mi><mi>/</mi><mi>m</mi></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\varepsilon_{p,M} = \frac{1}{1 + n/m}.</annotation></semantics></math></p>
+<p>Ou seja, mantidas as demais variáveis constantes,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+varia menos do que proporcionalmente em relação às variações de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>.
+E quanto maior a razão volume de transações
+(<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>)
+no ponto inicial em relação a
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>m</mi><annotation encoding="application/x-tex">m</annotation></semantics></math>,
+menor
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>ε</mi><mrow><mi>p</mi><mo>,</mo><mi>M</mi></mrow></msub><annotation encoding="application/x-tex">\varepsilon_{p,M}</annotation></semantics></math>.</p>
+<p>Retomando o exemplo de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mi>t</mi><mn>0</mn></msub><annotation encoding="application/x-tex">t_0</annotation></semantics></math>,
+em que
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mi>Y</mi><mo>=</mo><mn>25</mn></mrow><annotation encoding="application/x-tex">p \times Y = 25</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">p = 5</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Y</mi><mo>=</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">Y = 5</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>M</mi><mo>=</mo><mn>15</mn></mrow><annotation encoding="application/x-tex">M = 15</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi><mo>=</mo><mn>10</mn></mrow><annotation encoding="application/x-tex">\bar{Z} \times n = 10</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>n</mi><mo>=</mo><mn>1</mn></mrow><annotation encoding="application/x-tex">n = 1</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi><mo>=</mo><mn>1</mn><mo>,</mo><mn>5</mn></mrow><annotation encoding="application/x-tex">m = 1{,}5</annotation></semantics></math>,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mrow><mi>p</mi><mo>,</mo><mi>M</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>n</mi><mi>/</mi><mi>m</mi></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\varepsilon_{p,M} = \frac{1}{1 + n/m} = 0{,}6.</annotation></semantics></math></p>
+<p>Se
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+variar em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>15</mn><annotation encoding="application/x-tex">15</annotation></semantics></math>
+unidades,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mi>Y</mi><mo>=</mo><mn>30</mn><mo>+</mo><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi><mo>,</mo></mrow><annotation encoding="application/x-tex">p \times Y = 30 + \bar{Z} \times n,</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mn>5</mn><mo>=</mo><mn>30</mn><mo>+</mo><mn>10</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">p \times 5 = 30 + 10,</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>8</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">p = 8.</annotation></semantics></math></p>
+<p>Veja que
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mi>/</mi><msub><mi>p</mi><mn>0</mn></msub></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>M</mi><mi>/</mi><msub><mi>M</mi><mn>0</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mn>8</mn><mo>−</mo><mn>5</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>5</mn></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mn>30</mn><mo>−</mo><mn>15</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>15</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>6</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{\Delta p/p_0}{\Delta M/M_0} = \frac{(8-5)/5}{(30-15)/15} = 0{,}6.</annotation></semantics></math></p>
+<p>Suponha que em determinado ponto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>=</mo><mn>200</mn></mrow><annotation encoding="application/x-tex">n_0 = 200</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>0</mn></msub><mo>=</mo><mn>195</mn></mrow><annotation encoding="application/x-tex">m_0 = 195</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">p_0 = 100</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Y</mi><mn>0</mn></msub><mo>=</mo><mn>250</mn></mrow><annotation encoding="application/x-tex">Y_0 = 250</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mrow><mi>p</mi><mo>,</mo><mi>M</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>n</mi><mi>/</mi><mi>m</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mrow><mn>2</mn><mo>,</mo><mn>02564</mn></mrow></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\varepsilon_{p,M} = \frac{1}{1 + n/m} = \frac{1}{2{,}02564}.</annotation></semantics></math></p>
+<p>Ou seja, o valor da elasticidade acima pode ser interpretado da
+seguinte forma: mantidas as demais variáveis constantes, para cada
+variação de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">1\%</annotation></semantics></math>
+em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+no ponto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>200</mn><mo>,</mo><mspace width="0.167em"></mspace><mn>195</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(200,\,195)</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+varia
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4936</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">0{,}4936\%</annotation></semantics></math>.
+Ou, mantidas as demais variáveis constantes, para cada variação de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">1\%</annotation></semantics></math>
+em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+varia
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>4936</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">0{,}4936\%</annotation></semantics></math>,
+dadas variações infinitesimais de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+em torno do ponto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>200</mn><mo>,</mo><mspace width="0.167em"></mspace><mn>195</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(200,\,195)</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mi>Y</mi><mo>=</mo><mi>M</mi><mo>×</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><mi>n</mi><mi>m</mi></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mo>,</mo></mrow><annotation encoding="application/x-tex">p \times Y = M \times \left(1 + \frac{n}{m}\right),</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25000</mn><mo>=</mo><mi>M</mi><mo>×</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><mn>200</mn><mn>195</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">25000 = M \times \left(1 + \frac{200}{195}\right).</annotation></semantics></math></p>
+<p>Logo,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>=</mo><mn>12.341</mn><mo>,</mo><mn>77</mn></mrow><annotation encoding="application/x-tex">M_0 = 12.341{,}77</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi><mo>=</mo><mn>12.658</mn><mo>,</mo><mn>22</mn></mrow><annotation encoding="application/x-tex">\bar{Z} \times n = 12.658{,}22</annotation></semantics></math>.</p>
+<p>Se
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+variar em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1000</mn><annotation encoding="application/x-tex">1000</annotation></semantics></math>
+unidades,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mn>250</mn><mo>=</mo><mn>13.341</mn><mo>,</mo><mn>77</mn><mo>+</mo><mn>12.658</mn><mo>,</mo><mn>22</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">p \times 250 = 13.341{,}77 + 12.658{,}22,</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>104</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">p = 104.</annotation></semantics></math></p>
+<p>Veja que
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mi>/</mi><msub><mi>p</mi><mn>0</mn></msub></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>M</mi><mi>/</mi><msub><mi>M</mi><mn>0</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mn>104</mn><mo>−</mo><mn>100</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>100</mn></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mn>13.341</mn><mo>,</mo><mn>77</mn><mo>−</mo><mn>12.341</mn><mo>,</mo><mn>77</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>12.341</mn><mo>,</mo><mn>77</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>4936</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{\Delta p/p_0}{\Delta M/M_0} = \frac{(104-100)/100}{(13.341{,}77-12.341{,}77)/12.341{,}77} = 0{,}4936.</annotation></semantics></math></p>
+<p>Ou seja, enquanto a oferta de moeda cresceu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1000</mn><annotation encoding="application/x-tex">1000</annotation></semantics></math>
+unidades monetárias, o preço cresceu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>4</mn><annotation encoding="application/x-tex">4</annotation></semantics></math>
+unidades monetárias.</p>
+<p>Suponha que em determinado ponto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>n</mi><mn>0</mn></msub><mo>=</mo><mn>1000</mn></mrow><annotation encoding="application/x-tex">n_0 = 1000</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>m</mi><mn>0</mn></msub><mo>=</mo><mn>250</mn></mrow><annotation encoding="application/x-tex">m_0 = 250</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>p</mi><mn>0</mn></msub><mo>=</mo><mn>100</mn></mrow><annotation encoding="application/x-tex">p_0 = 100</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>Y</mi><mn>0</mn></msub><mo>=</mo><mn>250</mn></mrow><annotation encoding="application/x-tex">Y_0 = 250</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>ε</mi><mrow><mi>p</mi><mo>,</mo><mi>M</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><mi>n</mi><mi>/</mi><mi>m</mi></mrow></mfrac><mo>=</mo><mfrac><mn>1</mn><mn>5</mn></mfrac><mi>.</mi></mrow><annotation encoding="application/x-tex">\varepsilon_{p,M} = \frac{1}{1 + n/m} = \frac{1}{5}.</annotation></semantics></math></p>
+<p>Ou seja, o valor da elasticidade acima pode ser interpretado da
+seguinte forma: mantidas as demais variáveis constantes, para cada
+variação de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">1\%</annotation></semantics></math>
+em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+no ponto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1000</mn><mo>,</mo><mspace width="0.167em"></mspace><mn>250</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1000,\,250)</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+varia
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>20</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">0{,}20\%</annotation></semantics></math>.
+Ou, mantidas as demais variáveis constantes, para cada variação de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>1</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">1\%</annotation></semantics></math>
+em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>p</mi><annotation encoding="application/x-tex">p</annotation></semantics></math>
+varia
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>0</mn><mo>,</mo><mn>20</mn><mi>%</mi></mrow><annotation encoding="application/x-tex">0{,}20\%</annotation></semantics></math>,
+dadas variações infinitesimais de
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+em torno do ponto
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo stretchy="false" form="prefix">(</mo><mn>1000</mn><mo>,</mo><mspace width="0.167em"></mspace><mn>250</mn><mo stretchy="false" form="postfix">)</mo></mrow><annotation encoding="application/x-tex">(1000,\,250)</annotation></semantics></math>.</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mn>25000</mn><mo>=</mo><mi>M</mi><mo>×</mo><mrow><mo stretchy="true" form="prefix">(</mo><mn>1</mn><mo>+</mo><mfrac><mn>1000</mn><mn>250</mn></mfrac><mo stretchy="true" form="postfix">)</mo></mrow><mi>.</mi></mrow><annotation encoding="application/x-tex">25000 = M \times \left(1 + \frac{1000}{250}\right).</annotation></semantics></math></p>
+<p>Logo,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>M</mi><mn>0</mn></msub><mo>=</mo><mn>5.000</mn></mrow><annotation encoding="application/x-tex">M_0 = 5.000</annotation></semantics></math>
+e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mover><mi>Z</mi><mo accent="true">‾</mo></mover><mo>×</mo><mi>n</mi><mo>=</mo><mn>20.000</mn></mrow><annotation encoding="application/x-tex">\bar{Z} \times n = 20.000</annotation></semantics></math>.</p>
+<p>Se
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>M</mi><annotation encoding="application/x-tex">M</annotation></semantics></math>
+variar em
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>500</mn><annotation encoding="application/x-tex">500</annotation></semantics></math>
+unidades,</p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>×</mo><mn>250</mn><mo>=</mo><mn>5.500</mn><mo>+</mo><mn>20.000</mn><mo>,</mo></mrow><annotation encoding="application/x-tex">p \times 250 = 5.500 + 20.000,</annotation></semantics></math></p>
+<p><math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>p</mi><mo>=</mo><mn>102</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">p = 102.</annotation></semantics></math></p>
+<p>Veja que
+<math display="block" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mfrac><mrow><mi mathvariant="normal">Δ</mi><mi>p</mi><mi>/</mi><msub><mi>p</mi><mn>0</mn></msub></mrow><mrow><mi mathvariant="normal">Δ</mi><mi>M</mi><mi>/</mi><msub><mi>M</mi><mn>0</mn></msub></mrow></mfrac><mo>=</mo><mfrac><mrow><mo stretchy="false" form="prefix">(</mo><mn>102</mn><mo>−</mo><mn>100</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>100</mn></mrow><mrow><mo stretchy="false" form="prefix">(</mo><mn>5.500</mn><mo>−</mo><mn>5.000</mn><mo stretchy="false" form="postfix">)</mo><mi>/</mi><mn>5.000</mn></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>20</mn><mi>.</mi></mrow><annotation encoding="application/x-tex">\frac{\Delta p/p_0}{\Delta M/M_0} = \frac{(102-100)/100}{(5.500-5.000)/5.000} = 0{,}20.</annotation></semantics></math></p>
+<p>Ou seja, enquanto a oferta de moeda cresceu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>500</mn><annotation encoding="application/x-tex">500</annotation></semantics></math>
+unidades monetárias, o preço cresceu
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>2</mn><annotation encoding="application/x-tex">2</annotation></semantics></math>
+unidades monetárias.</p>
+<p>Esse exemplo de uma economia particular, por si só, é suficiente para
+invalidar a afirmação de que os preços sempre variam proporcionalmente
+às variações da oferta de moeda.</p>
+<p>A afirmação de que os preços sempre variam proporcionalmente à oferta
+de moeda é logicamente falsa, pois existe ao menos uma economia
+teoricamente consistente em que essa proporcionalidade não se verifica,
+pelo menos no curto prazo.</p>
+<p>O exposto acima pode ser verificado independentemente se a economia
+tiver somente um produtor ou
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+produtores.</p>
+<p>Para ver a parte 2 desse trabalho, em que eu amplio a estrutura dessa
+economia, generalizando para
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>j</mi><annotation encoding="application/x-tex">j</annotation></semantics></math>
+produtores,
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>n</mi><annotation encoding="application/x-tex">n</annotation></semantics></math>
+trabalhadores e
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mn>1</mn><annotation encoding="application/x-tex">1</annotation></semantics></math>
+agente que oferta moeda, acesse o link a seguir:
+<code>https://wlucianocantanhede-beep.github.io/economia-e-financas/por-que-e-errado-afirmar-que-os-precos-sempre-variam-proporcionalmente-diante-de-variacoes-na-oferta-de-moeda-uma-enfase-no-curto-prazo-de-uma-economia-hipotetica-parte-2.html</code></p>
+</body>
+</html>
